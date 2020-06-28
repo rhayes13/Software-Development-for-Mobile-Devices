@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SQNote</string>
+    <string name="title_activity_update">UpdateActivity</string>
+    <!-- Strings used for fragments for navigation -->
+
+</resources>
