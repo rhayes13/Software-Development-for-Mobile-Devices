@@ -1,0 +1,2 @@
+rootProject.name='Moving Shapes'
+include ':app'
