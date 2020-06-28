@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorSecondary"
+    tools:context=".WestActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorText"
+        android:text="From Washtenaw Ave, head north\n\nTurn right onto E Huron River Dr\n\nTurn right onto Hogback Rd\n\nTurn left onto Clark Rd\n\nTurn right onto N Hewitt Rd\n\n"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="@dimen/textSize"/>
+
+    <Button
+        style="@style/ButtonTheme"
+        android:layout_gravity="center"
+        android:text="BACK"
+        android:id="@+id/buttonBack" />
+
+</LinearLayout>

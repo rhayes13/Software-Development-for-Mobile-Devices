@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/num1Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/operatorTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/num1Tv"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="30sp"
+        android:text="op" />
+
+    <TextView
+        android:id="@+id/num2Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/operatorTv"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize"
+        android:text="2" />
+
+    <TextView
+        android:id="@+id/equalsTv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/num2Tv"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize"
+        android:text="=" />
+
+    <EditText
+        android:id="@+id/outputEt"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/equalsTv"
+        android:padding="5dp"
+        android:inputType="numberSigned"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/outputEt"
+        android:layout_marginTop="70dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="Submit"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/correctTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/submitButton"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:text="Submit answer" />
+
+    <TextView
+        android:id="@+id/counterTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/correctTv"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:text="0/0" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/counterTv"
+        android:layout_marginTop="70dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="Next"
+        android:textSize="@dimen/textSize" />
+
+</RelativeLayout>

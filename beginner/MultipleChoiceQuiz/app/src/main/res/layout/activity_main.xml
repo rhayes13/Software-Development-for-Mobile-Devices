@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize"
+        android:text="Question: " />
+
+    <RadioGroup
+        android:id="@+id/answersRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/radioTextSize"
+            android:text="ans1" />
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textSize="@dimen/radioTextSize"
+            android:textColor="@color/colorText"
+            android:text="ans2" />
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/radioTextSize"
+            android:text="ans3" />
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/radioTextSize"
+            android:text="ans3" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/answersRadioGroup"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:text="Submit"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/correctTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSubmit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="15sp"
+        android:text="Submit Answer" />
+
+    <TextView
+        android:id="@+id/questionNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/correctTextView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="15sp"
+        android:text="0/0" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/correctTextView"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:text="Next"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+</RelativeLayout>

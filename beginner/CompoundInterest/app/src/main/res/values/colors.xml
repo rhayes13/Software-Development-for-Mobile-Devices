@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorText">#000000</color>
+    <color name="colorBackground">#EEEEEE</color>
+    <color name="colorPrimary">#162955</color>
+    <color name="colorPrimary2">#99162955</color>
+    <color name="colorButton">#5E292525</color>
+    <color name="colorComplilmentary">#162955</color>
+    <color name="colorPrimaryDark">#061539</color>
+    <color name="colorPrimaryDark2">#CC061539</color>
+    <color name="colorAccent">#2E4272</color>
+</resources>

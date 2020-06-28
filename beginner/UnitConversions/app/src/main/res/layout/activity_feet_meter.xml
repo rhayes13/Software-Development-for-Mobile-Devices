@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    tools:context=".FeetMeterActivity">
+
+    <LinearLayout
+        android:id="@+id/feetLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:id="@+id/feetIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimaryLight"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize"
+            android:inputType="numberDecimal"
+            android:hint="Feet"/>
+
+        <TextView
+            android:id="@+id/meterOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimaryLight"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize"
+            android:layout_weight="1"
+            android:maxLength="9"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/meterLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/feetLL"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:id="@+id/meterIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimaryLight"
+            android:textColor="@color/colorText"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/textSize"
+            android:hint="Meter"/>
+
+        <TextView
+            android:id="@+id/feetOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimaryLight"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize"
+            android:maxLength="9"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@+id/meterLL"
+        android:layout_marginTop="20dp"
+        style="@style/ButtonTheme"
+        android:layout_gravity="center"
+        android:text="BACK"
+        android:id="@+id/buttonBack"/>
+
+</RelativeLayout>

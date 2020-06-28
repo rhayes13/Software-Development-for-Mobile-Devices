@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="30dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/topTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Enter numbers"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/inputEt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="25dp"
+        android:padding="8dp"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize"
+        android:background="@color/colorSecondary"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="25dp"
+
+        >
+
+        <Button
+            android:id="@+id/sumButton"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            style="@style/ButtonTheme"
+            android:text="SUM"/>
+
+        <Button
+            android:id="@+id/meanButton"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            style="@style/ButtonTheme"
+            android:text="MEAN"/>
+
+        <Button
+            android:id="@+id/medianButton"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            style="@style/ButtonTheme"
+            android:text="MEDIAN"/>
+
+        <Button
+            android:id="@+id/stdvButton"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            style="@style/ButtonTheme"
+            android:text="STDV"/>
+
+        <Button
+            android:id="@+id/minButton"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            style="@style/ButtonTheme"
+            android:text="MIN"/>
+
+        <Button
+            android:id="@+id/maxButton"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            style="@style/ButtonTheme"
+            android:text="MAX"/>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/outputTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize"
+        android:background="@color/colorPrimaryLight"/>
+
+</LinearLayout>

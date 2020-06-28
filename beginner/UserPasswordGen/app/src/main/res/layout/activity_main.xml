@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="add"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/labelFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="First name: "
+        android:textColor="@color/colorText"
+        android:background="@color/colorPrimary2"
+        android:textSize="@dimen/textSize" />
+
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/labelFirstName"
+        android:inputType="text"
+        android:hint="John"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/labelLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelFirstName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:text="Last name: "
+        android:textColor="@color/colorText"
+        android:background="@color/colorPrimary2"
+        android:textSize="@dimen/textSize" />
+
+    <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editFirstName"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/labelLastName"
+        android:hint="Smith"
+        android:inputType="text"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/labelDateOfBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelLastName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:text="Date of Birth: "
+        android:textColor="@color/colorText"
+        android:background="@color/colorPrimary2"
+        android:textSize="@dimen/textSize" />
+
+    <EditText
+        android:id="@+id/editDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/editLastName"
+        android:layout_toRightOf="@id/labelDateOfBirth"
+        android:hint="mm/dd/yyyy"
+        android:inputType="date"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <Button
+        android:id="@+id/buttonGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelDateOfBirth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="35dp"
+        android:padding="10dp"
+        android:text="Generate"
+        android:textColor="@color/colorText"
+        android:background="@color/colorButton"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/labelUserID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonGenerate"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:text="User ID: "
+        android:textColor="@color/colorText"
+        android:background="@color/colorPrimaryDark2"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/labelUserPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelUserID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:text="Password: "
+        android:textColor="@color/colorText"
+        android:background="@color/colorPrimaryDark2"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/outputUserID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonGenerate"
+        android:layout_marginLeft="41dp"
+        android:layout_toRightOf="@id/labelUserID"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/outputUserPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outputUserID"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/labelUserPassword"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/labelDateOfBirth"
+        android:layout_marginTop="5dp"
+        android:background="?android:attr/listDivider"
+        android:clickable="false"
+        android:outlineSpotShadowColor="@color/colorComplilmentary"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+</RelativeLayout>

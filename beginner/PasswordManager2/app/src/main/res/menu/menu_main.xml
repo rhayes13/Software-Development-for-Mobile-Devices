@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cosc426.passwordmanager.MainActivity">
+
+    <item
+        android:id="@+id/add"
+        android:title="ADD"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/delete"
+        android:title="DELETE"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/update"
+        android:title="UPDATE"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    tools:context=".AddActivity">
+
+    <TableLayout
+        android:id="@+id/tableMain"
+        style="@style/TableTheme">
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_marginTop="17dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="8dp"
+                android:text="PLACE:"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textSize"
+                android:layout_column="0"/>
+
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSecondary"
+                android:hint="name"
+                android:padding="8dp"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textSize"
+                android:layout_column="1"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_marginTop="17dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/pwTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="8dp"
+                android:text="PASSWORD:"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textSize"
+                android:layout_column="0"/>
+
+            <EditText
+                android:id="@+id/pwEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSecondary"
+                android:hint="password"
+                android:padding="8dp"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textSize"
+                android:layout_column="1"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_below="@id/tableMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        style="@style/ButtonTheme"
+        android:text="ADD"
+        android:onClick="add"/>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_below="@id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        style="@style/ButtonTheme"
+        android:text="BACK"
+        android:onClick="back"/>
+
+</RelativeLayout>

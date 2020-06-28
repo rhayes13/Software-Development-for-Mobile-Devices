@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/colorBox"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"/>
+
+    <EditText
+        android:id="@+id/editR"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/colorBox"
+        android:layout_toLeftOf="@id/editG"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:background="#FF0000"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:maxLength="3"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/editG"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/colorBox"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="#00FF00"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:maxLength="3"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/editB"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/colorBox"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/editG"
+        android:background="#0000FF"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:maxLength="3"
+        android:text="0" />
+
+
+</RelativeLayout>

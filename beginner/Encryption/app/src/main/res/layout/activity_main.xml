@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorSecondary"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="@color/colorButton"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize"
+        android:textDirection="inherit"
+        android:ellipsize="end"
+        android:maxLength="200"
+        android:hint="Enter text"
+        android:gravity="top|left" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+
+        <Button
+            android:id="@+id/buttonEncrypt"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="@style/ButtonTheme"
+            android:text="ENCRYPT"/>
+
+        <Button
+            android:id="@+id/buttonDecrypt"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="@style/ButtonTheme"
+            android:text="DECRYPT"/>
+
+        <Button
+            android:id="@+id/buttonKey"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="@style/ButtonTheme"
+            android:text="KEY"/>
+    </LinearLayout>
+
+</LinearLayout>

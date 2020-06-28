@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/labelPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Current Principal ($): "
+        android:background="@color/colorPrimary2"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <EditText
+        android:id="@+id/editPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/labelPrincipal"
+        android:hint="$0.00"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/labelAnnualAddition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelPrincipal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:text="Annual Addition ($): "
+        android:background="@color/colorPrimary2"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <EditText
+        android:id="@+id/editAnnualAddition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPrincipal"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/labelAnnualAddition"
+        android:hint="$0.00"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/labelNumberOfYears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelAnnualAddition"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:text="Number of Years: "
+        android:background="@color/colorPrimary2"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <EditText
+        android:id="@+id/editNumberOfYears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editAnnualAddition"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/labelNumberOfYears"
+        android:hint="0.0"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/labelRateOfReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelNumberOfYears"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:text="Rate of Return (%): "
+        android:background="@color/colorPrimary2"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <EditText
+        android:id="@+id/editRateOfReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNumberOfYears"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/labelRateOfReturn"
+        android:hint="0.0"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <Button
+        android:id="@+id/buttonCompute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelRateOfReturn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="35dp"
+        android:padding="10dp"
+        android:text="Compute"
+        android:background="@color/colorButton"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/labelCompoundInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCompute"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:text="Final Amount: "
+        android:background="@color/colorPrimaryDark2"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/outputFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/labelCompoundInterest"
+        android:layout_below="@id/buttonCompute"
+        android:layout_marginLeft="40dp"
+        android:hint="$0.00"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize" />
+
+</RelativeLayout>

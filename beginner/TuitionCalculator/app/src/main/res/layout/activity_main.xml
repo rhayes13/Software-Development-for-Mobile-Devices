@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/labelCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:padding="10dp"
+            android:textColor="@color/colorText"
+            android:background="@color/colorPrimary"
+            android:textSize="@dimen/textSize"
+            android:text="Credits: " />
+
+        <EditText
+            android:id="@+id/editCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@id/labelCredits"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize"
+            android:hint="0" />
+
+        <!-- Academic Status Radio Group -->
+        <TextView
+            android:id="@+id/labelAcademicStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/editCredits"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize"
+            android:text="Academic Status: " />
+
+        <RadioGroup
+        android:id="@+id/radioAcademicStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelAcademicStatus"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/rbGraduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/radioTextSize"
+            android:text="Graduate" />
+        <RadioButton
+            android:id="@+id/rbUndergrad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textSize="@dimen/radioTextSize"
+            android:textColor="@color/colorText"
+            android:text="Undergraduate"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rbNonDegree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/radioTextSize"
+            android:text="Non-degree" />
+        </RadioGroup>
+
+
+
+        <!-- State Status Radio Group -->
+        <TextView
+            android:id="@+id/labelStateStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/radioAcademicStatus"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize"
+            android:text="State Status: " />
+
+        <RadioGroup
+            android:id="@+id/radioStateStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelStateStatus"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rbInState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/radioTextSize"
+                android:text="in-state"
+                android:checked="true" />
+            <RadioButton
+                android:id="@+id/rbOutOfState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textSize="@dimen/radioTextSize"
+                android:textColor="@color/colorText"
+                android:text="out-of-state" />
+        </RadioGroup>
+
+        <!-- Optional Expenses CheckBoxes -->
+        <TextView
+            android:id="@+id/labelOptionalExpenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/radioStateStatus"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize"
+            android:text="Optional Expenses: " />
+
+        <CheckBox
+            android:id="@+id/cbDormitory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelOptionalExpenses"
+            android:layout_marginLeft="40dp"
+            android:padding="3dp"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/radioTextSize"
+            android:text="Dormitory" />
+
+        <CheckBox
+            android:id="@+id/cbDining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbDormitory"
+            android:layout_marginLeft="40dp"
+            android:padding="3dp"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/radioTextSize"
+            android:text="Dining" />
+
+        <CheckBox
+            android:id="@+id/cbParking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbDining"
+            android:layout_marginLeft="40dp"
+            android:padding="3dp"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/radioTextSize"
+            android:text="Parking" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbParking"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="35dp"
+            android:padding="10dp"
+            android:text="Submit"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize" />
+
+        <!-- Tuition -->
+        <TextView
+            android:id="@+id/labelTuition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/buttonSubmit"
+            android:padding="10dp"
+            android:background="@color/colorComplilmentary"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize"
+            android:text="Tuition: " />
+
+        <TextView
+            android:id="@+id/outputTuition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="70dp"
+            android:layout_below="@id/buttonSubmit"
+            android:layout_toRightOf="@+id/labelTuition"
+            android:padding="10dp"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize" />
+
+
+    </RelativeLayout>
+</ScrollView>

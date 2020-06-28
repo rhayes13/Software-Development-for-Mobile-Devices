@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.cosc426.firstapp.MainActivity">
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="90dp"
+        android:hint="0.0"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="@dimen/textSize"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/input1"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="60dp"
+        android:hint="0.0"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="@dimen/textSize"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input1"
+        android:layout_marginRight="3dp"
+        android:background="@color/colorButton"
+        android:padding="5dp"
+        android:text="+"
+        android:textSize="@dimen/textSize" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/add"
+        android:layout_below="@id/input1"
+        android:layout_marginRight="3dp"
+        android:background="@color/colorButton"
+        android:padding="5dp"
+        android:text="-"
+        android:textSize="@dimen/textSize" />
+
+    <Button
+        android:id="@+id/mult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sub"
+        android:layout_below="@id/input1"
+        android:layout_marginRight="3dp"
+        android:background="@color/colorButton"
+        android:padding="5dp"
+        android:text="*"
+        android:textSize="@dimen/textSize" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mult"
+        android:layout_below="@id/input1"
+        android:padding="5dp"
+        android:background="@color/colorButton"
+        android:text="/"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add"
+        android:layout_centerHorizontal="true"
+        android:hint="output"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize"
+        android:gravity="center"/>
+
+
+</RelativeLayout>
